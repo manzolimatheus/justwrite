@@ -1,5 +1,5 @@
 <template>
-  <div id="application" class="bg-light">
+  <div id="application">
     <Header/>
     <Navbar/>
    <router-view />
@@ -26,7 +26,4 @@ export default{
   padding: 0;
 }
 
-#application{
-  height: 100vh;
-}
 </style>

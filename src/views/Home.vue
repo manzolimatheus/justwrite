@@ -35,7 +35,7 @@ export default {
 }
 
 .text{
-  padding: 15% 10% 10% 10%;
+  padding: 10% 10% 10% 10%;
 }
 
 .text a{

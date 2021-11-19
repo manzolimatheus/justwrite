@@ -13,7 +13,7 @@
             aceita ser nosso Paraninfo e nos acompanhar ao fim dessa jornada? ♥
             A propósito, espero que goste de pinguins!
           </p>
-          <p>- De toda a sala - 19 de Novembro de 2021</p>
+          <p>- De toda a sala, 19 de Novembro de 2021</p>
 
           <lottie-player
             src="https://assets10.lottiefiles.com/private_files/lf30_mmejwv1s.json"
