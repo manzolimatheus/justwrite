@@ -1,28 +1,25 @@
 <template>
   <div id="application">
-    <Header/>
-    <Navbar/>
-   <router-view />
+    <Header />
+    <Navbar />
+    <router-view />
   </div>
-  
 </template>
 
 <script>
-import Header from '@/components/Header.vue'
-import Navbar from '@/components/Navbar.vue'
+import Header from "@/components/Header.vue";
+import Navbar from "@/components/Navbar.vue";
 
-export default{
-  components:{
+export default {
+  components: {
     Header,
-    Navbar
-  }
-}
+    Navbar,
+  },
+};
 </script>
 
-
 <style>
-
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -49,6 +46,4 @@ export default{
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
-
 </style>

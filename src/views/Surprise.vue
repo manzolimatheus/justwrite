@@ -26,9 +26,7 @@
         </div>
       </div>
       <div class="col-sm">
-        <div class="img">
-          
-          </div>
+        <div class="img"></div>
       </div>
     </div>
   </div>
@@ -41,13 +39,12 @@ export default {
 </script>
 
 <style scoped>
-.img{
-  background-image:url('/img/img01.jpeg') ;
+.img {
+  background-image: url("/img/img01.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
-
 }
 </style>

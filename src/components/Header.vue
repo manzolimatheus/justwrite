@@ -6,12 +6,12 @@
 
 <script>
 export default {
-  name: "Header"
+  name: "Header",
 };
 </script>
 
 <style scoped>
-header{
+header {
   text-align: center;
   padding: 1%;
   background-color: white;

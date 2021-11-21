@@ -115,7 +115,7 @@ export default {
       <h1>${note.title}</h1>
       <em>Registrado em ${today.getDate()}/${today.getMonth()}/${today.getFullYear()}</em>
       <br><br>
-      ${note.img != '' ? `<img src="${note.img}" width="100%">` : ''}
+      ${note.img != "" ? `<img src="${note.img}" width="100%">` : ""}
       <br><br>
       <textarea rows="60" cols="60">${note.data}</textarea>
       </div>

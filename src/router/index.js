@@ -17,10 +17,9 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/Surprise.vue"),
   },
   {
-   path: "/notes",
-   name: "Notes",
-   component: () =>
-   import("../views/Notes.vue")
+    path: "/notes",
+    name: "Notes",
+    component: () => import("../views/Notes.vue"),
   },
 ];
 

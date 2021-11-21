@@ -2,19 +2,34 @@
   <div id="noteshow" class="m-3">
     <div v-if="note_selected != null">
       <span class="badge bg-secondary">{{ note_selected.id }}</span>
-      <input type="text" v-model="title" @change="Save()" class="input-zero ms-1 w-75" maxlength="40" />
-      <br>
-      <span v-show="msg" class="text-success ms-1">Nota salva com sucesso.</span>
+      <input
+        type="text"
+        v-model="title"
+        @change="Save()"
+        class="input-zero ms-1 w-75"
+        maxlength="40"
+      />
+      <br />
+      <span v-show="msg" class="text-success ms-1"
+        >Nota salva com sucesso.</span
+      >
       <br /><br />
       <textarea
         v-model="text"
         @change="Save"
+        rows="6"
         class="w-100 form-control"
       ></textarea>
-      <br>
-      <img :src="img_url" alt="Imagem anexada" class="img shadow" id="img" v-if="img_url != ''" />
-      <br>
-       <input
+      <br />
+      <img
+        :src="img_url"
+        alt="Imagem anexada"
+        class="img shadow"
+        id="img"
+        v-if="img_url != ''"
+      />
+      <br />
+      <input
         type="url"
         id="img_url"
         v-model="img_url"
@@ -83,7 +98,7 @@ textarea {
   background: none;
 }
 
-.img{
+.img {
   width: 100%;
   border-radius: 10px;
   object-fit: cover;
