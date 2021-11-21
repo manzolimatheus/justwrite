@@ -1,8 +1,8 @@
 <template>
   <div id="about">
-    <div class="row w-100">
+    <div class="row w-100 g-0">
       <div class="col-sm">
-        <div class="container mt-5">
+        <div class="container mt-5 p-3">
           <h1>Querido professor,</h1>
           <p>
             Querido professor Nilton, adoramos passar esses três anos com você e
@@ -19,56 +19,16 @@
             src="https://assets10.lottiefiles.com/private_files/lf30_mmejwv1s.json"
             background="transparent"
             speed="1"
-            style="width: 150px;"
+            style="width: 150px"
             loop
             autoplay
           ></lottie-player>
         </div>
       </div>
       <div class="col-sm">
-        <div class="container">
-          <div
-            id="carouselExampleControls"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="/img/img01.jpeg" class="d-block w-100" alt="..." />
-              </div>
-              <div class="carousel-item">
-                <img src="/img/img02.jpeg" class="d-block w-100" alt="..." />
-              </div>
-              <div class="carousel-item">
-                <img src="/img/img03.jpeg" class="d-block w-100" alt="..." />
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+        <div class="img">
+          
           </div>
-        </div>
       </div>
     </div>
   </div>
@@ -81,4 +41,13 @@ export default {
 </script>
 
 <style scoped>
+.img{
+  background-image:url('/img/img01.jpeg') ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+
+}
 </style>

@@ -102,24 +102,24 @@ export default {
         this.$router.push("/surprise");
       } else {
         if (JSON.parse(localStorage.getItem("notes")) !== null) {
-          const today = new Date();
           let notes = JSON.parse(localStorage.getItem("notes"));
-          console.log();
           this.$emit("post", {
             id: notes.length + 1,
-            data: this.data.replace(
-              "@date",
-              `${today.getDate()}/${today.getMonth()}/${today.getFullYear()} - ${today.getHours()}:${today.getMinutes()}`
-            ),
+            data: this.data,
             title: this.title,
-            img: this.img_url
+            img: this.img_url,
           });
         } else {
-          this.$emit("post", { id: 1, data: this.data, title: this.title, img: this.img_url });
+          this.$emit("post", {
+            id: 1,
+            data: this.data,
+            title: this.title,
+            img: this.img_url,
+          });
         }
         this.title = "";
         this.data = "";
-        this.img_url = ''
+        this.img_url = "";
         document.querySelector("#submitButton").disabled = true;
         document.querySelector("#img").style.display = "none";
       }
@@ -133,9 +133,9 @@ export default {
         button.disabled = true;
       }
     },
-    LoadImage(){
+    LoadImage() {
       document.querySelector("#img").style.display = "block";
-    }
+    },
   },
   mounted() {
     document.querySelector("#img").style.display = "none";
