@@ -126,7 +126,7 @@ export default {
       `;
       var blob = new Blob([file], { type: "text/html;charset=utf-8" });
 
-      saveAs(blob, note.title);
+      saveAs(blob, `${note.title}.html`);
     },
   },
   watch: {
