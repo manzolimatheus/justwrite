@@ -100,6 +100,7 @@ export default {
     newNote() {
       if (this.data.includes("@surprise") === true) {
         document.querySelector("body > div.modal-backdrop.fade.show").remove();
+        document.querySelector("body").style.overflow = 'scroll'
         this.$router.push("/surprise");
       } else {
         if (JSON.parse(localStorage.getItem("notes")) !== null) {
