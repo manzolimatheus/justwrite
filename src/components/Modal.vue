@@ -9,7 +9,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">
+          <h5 class="modal-title text-truncate" id="exampleModalLabel">
             Escrevendo: {{ title }}
           </h5>
           <button
@@ -29,6 +29,7 @@
                 id="title"
                 class="form-control"
                 @input="checkEmpty"
+                maxlength="40"
               />
               <br />
               <label for="data">Texto *</label>

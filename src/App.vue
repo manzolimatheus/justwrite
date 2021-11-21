@@ -21,6 +21,7 @@ export default{
 
 
 <style>
+
 *{
   margin: 0;
   padding: 0;
@@ -48,5 +49,6 @@ export default{
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
 
 </style>

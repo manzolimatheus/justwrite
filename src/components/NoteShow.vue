@@ -2,7 +2,8 @@
   <div id="noteshow" class="m-3">
     <div v-if="note_selected != null">
       <span class="badge bg-secondary">{{ note_selected.id }}</span>
-      <input type="text" v-model="title" @change="Save()" class="input-zero ms-1" />
+      <input type="text" v-model="title" @change="Save()" class="input-zero ms-1 w-75" maxlength="40" />
+      <br>
       <span v-show="msg" class="text-success ms-1">Nota salva com sucesso.</span>
       <br /><br />
       <textarea
