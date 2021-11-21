@@ -43,6 +43,7 @@ export default {
         id: obj.id,
         title: obj.title,
         data: obj.data,
+        img: obj.img
       });
       localStorage.setItem("notes", JSON.stringify(this.notes));
       this.$emit("refresh");
